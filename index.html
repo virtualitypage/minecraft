@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <script src="./js/admin.js"></script>
+      <img src="./img/minecraft.svg" width="200" alt="minecraft" id="result" onclick="butClick()">
+        <nav class="nav">
+        <ul class="menu-group">
+          <li class="menu-item"><a onclick="realms()">Realms</a></li>
+          <li class="menu-item"><a href="./content/open_world">オープンワールド</a></li>
+          <li class="menu-item"><a href="./content/nether">ネザー</a></li>
+          <li class="menu-item"><a href="./content/end">エンド</a></li>
+          <li class="menu-item"><a href="./content/chest">チェスト</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article style="background-color: rgb(87, 87, 87);">
+        <h1 style="text-align: center;">MINECRAFT REALMS</h1>
+        <p>
+          Realmsとは、異なる端末を使用している友達でも、簡単に、そして安全に同じ世界で<br>
+          プレイできるサブスクリプションサービスです。<br>
+          5種類のコンテンツとインフォメーションには<br>
+          ワールドやその他に関する情報が載っており、<br>
+          誰もが自由に閲覧することができます。<br>
+          ただし、Realmsサーバーについては認証が必要になります。
+        </p>
+      </article>
+      <article>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom">
+              <a class="btn-play-info" onclick="information()">インフォメーション</a>
+            </td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom">
+              <a class="btn-play" onclick="realms()">Realmsサーバー</a>
+            </td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom">
+              <a href="./content/open_world" class="btn-play">オープンワールド</a>
+            </td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom">
+              <a href="./content/nether" class="btn-play">ネザーアップデート</a>
+            </td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom">
+              <a href="./content/end" class="btn-play">エンドクエリ</a>
+            </td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom">
+              <a href="./content/chest" class="btn-play">チェスト</a>
+            </td>
+          </tr>
+        </table>
+      </article>
+      <br>
+    </main>
+    <footer>
+      <a href="#">
+        <img style="margin-top: 4px;" src="./img/minecraft.svg" width="200" alt="minecraft">
+      </a>
+    </footer>
+  </body>
+</html>
