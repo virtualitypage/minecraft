@@ -1,11 +1,11 @@
 function information(){
 	let date = new Date();
 	// alert(date.toLocaleDateString() + " 現在、最新情報はありません");
+	alert(date.toLocaleDateString() + " 現在\n同一ワールドのストラクチャーバックアップ90％完了");
 	// alert(date.toLocaleDateString() + " 現在\n");
 	// alert(date.toLocaleDateString() + " 現在\n");
 	// alert(date.toLocaleDateString() + " 現在\n");
-	// alert(date.toLocaleDateString() + " 現在\n");
-	alert(date.toLocaleDateString() + " 現在\n構造物バックアップ&更新用にストラクチャーブロックを設置中");
+	//　　alert(date.toLocaleDateString() + " 現在\n構造物バックアップ&更新用にストラクチャーブロックを設置中");
 }
 
 function release(){
