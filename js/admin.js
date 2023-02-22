@@ -1,7 +1,7 @@
 function information(){
 	let date = new Date();
-	// alert(date.toLocaleDateString() + " 現在、最新情報はありません");
-	alert(date.toLocaleDateString() + " 現在\n同一ワールドのストラクチャーバックアップ95％完了\nストラクチャーデータ更新");
+	alert(date.toLocaleDateString() + " 現在、最新情報はありません");
+	// alert(date.toLocaleDateString() + " 現在\n同一ワールドのストラクチャーバックアップ95％完了\nストラクチャーデータ更新");
 	// alert(date.toLocaleDateString() + " 現在\n");
 	// alert(date.toLocaleDateString() + " 現在\n");
 	// alert(date.toLocaleDateString() + " 現在\n");
