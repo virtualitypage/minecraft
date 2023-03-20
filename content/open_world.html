@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>オープンワールド</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header>
+      <script src="../js/admin.js"></script>
+      <a href="../index">
+        <img style="margin-top: 4px;" src="../img/minecraft.svg" width="200" alt="minecraft">
+      </a>
+      <nav class="nav">
+        <ul class="menu-group">
+          <li class="menu-item"><a onclick="realms2()">Realms</a></li>
+          <li class="menu-item"><a href="../content/nether">ネザー</a></li>
+          <li class="menu-item"><a href="../content/end">エンド</a></li>
+          <li class="menu-item"><a href="../content/chest">チェスト</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br>
+    <p style="text-align:center; font-size: 20px;"><b>【ロケーション】</b></p>
+    <main>
+      <article>
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>現在適用中のティック領域<br>(継続的に更新され続ける特定のチャンク)</b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a onclick="tickingArea()" class="btn-play">詳細を確認する</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="../img/mansion.png" width="100%" alt="monument">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>森の洋館<br>
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a onclick="mansion()" class="btn-play">座標を表示</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="../img/monument.png" width="100%" alt="monument">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>海底神殿<br>
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a onclick="monument()" class="btn-play">座標を表示</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="../img/deep_dark.png" width="100%" alt="monument">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>古代都市<br>
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a onclick="deepDark()" class="btn-play">座標を表示</a></td>
+          </tr>
+        </table>
+      </article>
+      <br>
+      <p style="text-align:center; font-size: 20px;"><b>【ロケーション(人工物)】</b></p>
+      <article>
+        <img src="../img/starting_chest.png" width="100%" alt="haney_factory">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>始まりのチェスト<br>
+          座標：-1, 63, -10
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a href="./open_world/starting_chest" class="btn-play">詳細</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+      <article>
+        <img src="../img/haney_factory.png" width="100%" alt="haney_factory">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>ハチミツ工場(ハニーボトル)<br>
+          座標：-6, 68, 54
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a href="./open_world/haney_factory" class="btn-play">詳細</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="../img/nether_house.png" width="100%" alt="nether_house">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>ネザーハウス<br>
+          座標：8, 65, 16
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a href="./open_world/nether_house" class="btn-play">詳細</a></td>
+          </tr>
+        </table>
+      </article>
+      <!-- <article>
+        <img src="../img/phulpa_factory.png" width="100%" alt="phulpa_factory">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>プルプァ工場(コーラスフルーツを製造)<br>
+          座標：-10, 66, 18
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a href="./open_world/phulpa_factory" class="btn-play">詳細</a></td>
+          </tr>
+        </table>
+      </article> -->
+      <article>
+        <img src="../img/woodland_mansion_artifact.png" width="100%" alt="woodland_mansion_artifact">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>森の洋館(らむちゃまの別荘)<br>
+          座標：-140, 90, 221
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a onclick="artifact()" class="btn-play">詳細</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="../img/library.png" width="100%" alt="library">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>図書館<br>
+          座標：-205, 69, -37
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a href="./open_world/library" class="btn-play">詳細</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="../img/modern_mansion.png" width="100%" alt="modern_mansion">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>モダンマンション<br>
+          座標：-15, 63, 180
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a class="btn-play">入居者募集中！</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="../img/modern_house.png" width="100%" alt="modern_house">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>モダンハウス<br>
+          座標：38, 63, 202
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a class="btn-play">入居者募集中！</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="../img/impulse_up-entrance.png" width="100%" alt="impulse_up-entrance">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>陸上監獄 "インペルアップ"(エントランス)<br>
+          座標：272, 65, 330
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a onclick="impulse_up()" class="btn-play">詳細</a></td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <img src="../img/impulse_up.png" width="100%" alt="impulse_up">
+        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>陸上監獄 "インペルアップ"<br>
+          座標：333, 64, 485
+        </b></p>
+        <table class="content-bottom">
+          <tr>
+            <td class="content-bottom"><a onclick="impulse_up()" class="btn-play">詳細</a></td>
+          </tr>
+        </table>
+      </article>
+    </main>
+    <footer>
+      <a href="#">
+        <img style="margin-top: 4px;" src="../img/minecraft.svg" width="200" alt="minecraft">
+      </a>
+    </footer>
+  </body>
+</html>
