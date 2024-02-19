@@ -41,7 +41,7 @@ body {
   font-family: system-ui, sans-serif;
   overflow-x: hidden;
   margin: 0;
-  background: rgb(204, 0, 255);
+  background-color: rgb(200 110 255);
   color: #fff;
 }
 
@@ -167,6 +167,7 @@ flex
   padding: 0;
   font-weight: bold;
   font-size: 18px;
+  text-shadow: 1px 1px 10px black, 0 0 1em black, 0 0 0.2em black;
 }
 .flex .text {
   margin: 10px 0 0;
@@ -197,6 +198,7 @@ flex
   padding: 0;
   font-weight: bold;
   font-size: 18px;
+  text-shadow: 1px 1px 10px black, 0 0 1em black, 0 0 0.2em black;
 }
 .flex2 .text {
   margin: 10px 0 0;

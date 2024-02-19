@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <title>チェスト</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
     <header>
       <script src="../js/admin.js"></script>
-      <a href="../index">
-        <img style="margin-top: 4px;" src="../img/minecraft.svg" width="200" alt="minecraft">
-      </a>
-      <nav class="nav">
+      <img src="../img/minecraft.svg" width="200" alt="minecraft" id="result" onclick="butClick()">
+        <nav class="nav">
         <ul class="menu-group">
           <li class="menu-item"><a onclick="realms2()">Realms</a></li>
           <li class="menu-item"><a href="../content/open_world">オープンワールド</a></li>
@@ -20,34 +19,54 @@
         </ul>
       </nav>
     </header>
-    <br>
-    <br>
-    <main>
-      <article>
-        <img src="../img/jukebox.png" width="100%" alt="blocks">
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="./chest/minecraft-ost" class="btn-play">音楽を聴く</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../img/craft.png" width="100%" alt="minecraft-realms">
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="./chest/back_up" class="btn-play">バックアップ</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../img/blocks.png" width="100%" alt="craft">
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="./chest/id-list" class="btn-play">ブロックID一覧</a></td>
-          </tr>
-        </table>
-      </article>
-    </main>
+    <section class="middleMargin-bgColor middleMargin-textColor">
+      <div class="container innerMargin sm:contentBetween contentBetween sm:gridContainer-12col">
+        <div class="grid division-1 gridGap">
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="./chest/minecraft-ost">
+              <img class="img replaceElement imgWidth-100 img-bgColor" src="../img/jukebox.png" alt="blocks">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="./chest/minecraft-ost">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  音楽を聴く
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックして画面を表示</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="./chest/back_up">
+              <img class="img replaceElement imgWidth-100 img-bgColor" src="../img/craft.png" alt="minecraft-realms">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="./chest/back_up">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  バックアップ
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックして画面を表示</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="./chest/id-list">
+              <img class="img replaceElement imgWidth-100 img-bgColor" src="../img/blocks.png" alt="craft">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="./chest/id-list">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  ブロックID一覧
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックして画面を表示</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <a href="#">
         <img style="margin-top: 4px;" src="../img/minecraft.svg" width="200" alt="minecraft">
@@ -55,3 +74,9 @@
     </footer>
   </body>
 </html>
+
+<style>
+  body,html {
+    height: 100%;
+  }
+</style>

@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <title>バックアップ</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/index.css" />
   </head>
   <body>
     <header>
       <script src="../../js/admin.js"></script>
-      <a href="../chest">
-        <img style="margin-top: 4px;" src="../../img/minecraft.svg" width="200" alt="minecraft">
-      </a>
-      <nav class="nav">
+      <img src="../../img/minecraft.svg" width="200" alt="minecraft" id="result" onclick="butClick()">
+        <nav class="nav">
         <ul class="menu-group">
           <li class="menu-item"><a onclick="realms3()">Realms</a></li>
           <li class="menu-item"><a href="../../content/open_world">オープンワールド</a></li>
@@ -20,154 +19,213 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <article style="background-color: rgb(87, 87, 87);">
-        <h1 style="text-align: center;">ワールドデータ</h1>
-      </article>
-      <article>
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>-2115676107773891739.mcworld<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/-2115676107773891739.mcworld" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <br>
-      <article style="background-color: rgb(87, 87, 87);">
-        <h1 style="text-align: center;">ストラクチャーブロック　インポートデータ</h1>
-      </article>
-      <article>
-        <img src="../../img/nether_house.png" width="100%" alt="haney_factory">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>ネザーハウス.zip<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/ネザーハウス.zip" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/haney_factory.png" width="100%" alt="haney_factory">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>ハチミツ工場.zip<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/ハチミツ工場.zip" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/library.png" width="100%" alt="library">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>図書館.zip<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/図書館.zip" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/woodland_mansion_artifact.png" width="100%" alt="woodland_mansion_artifact">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>森の洋館(らむちゃまの別荘).zip<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/森の洋館(らむちゃまの別荘).zip" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/branch_mining_site.png" width="100%" alt="branch_mining_site">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>ブランチマイニング場.zip<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/ブランチマイニング場.zip" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/space_valkyria.png" width="100%" alt="space_valkyria">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>Space Valkyria.zip<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/Space Valkyria.zip" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/impulse_up-entrance.png" width="100%" alt="impulse_up-entrance">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>陸上監獄インペルアップ_エントランス.mcstructure<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/陸上監獄インペルアップ_エントランス.mcstructure" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/impulse_up.png" width="100%" alt="impulse_up">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>陸上監獄インペルアップ.zip<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/陸上監獄インペルアップ.zip" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/modern_house.png" width="100%" alt="modern_house">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>豪華なモダンハウス.mcstructure<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/豪華なモダンハウス ロード時 Y -4.mcstructure" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/modern_mansion.png" width="100%" alt="modern_mansion">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>モダンマンション.mcstructure<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/モダンマンション.mcstructure" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/water_base.png" width="100%" alt="water_base">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>水上拠点.mcstructure<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/水上拠点.mcstructure" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/copper_house.png" width="100%" alt="copper_house">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>銅製ハウス.mcstructure<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/銅製ハウス.mcstructure" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../../img/sky_base.png" width="100%" alt="sky_base">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>空中拠点.mcstructure<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="../../dl/空中拠点.mcstructure" class="btn-play">ダウンロード</a></td>
-          </tr>
-        </table>
-      </article>
-    </main>
+    <section class="middleMargin-bgColor middleMargin-textColor">
+      <div class="container innerMargin sm:contentBetween contentBetween sm:gridContainer-12col">
+        <div class="sm:imgWidth-100 group hover:no-underline focus:no-underline lg:grid lg:gridContainer-12col outerMargin-bgColor">
+          <a onclick="tickingArea()" class="replaceElement lg:gridItem-7col img-bgColor">
+            <img src="../../img/openWorld.jpg" alt="" class="img_Realms replaceElement imgWidth-100 imgHeight-16rem sm:imgHeight-24rem lg:gridItem-7col img-bgColor">
+          </a>
+          <div class="innerMargin releaseDate-while lg:gridItem-5col">
+            <a onclick="tickingArea()">
+              <h3 class="titleSize titleSemibold sm:titleSize group-hover:underline group-focus:underline">
+                ワールドデータ
+              </h3>
+            </a>
+            <span class="releaseDate releaseDate-textColor"></span>
+            <p2>
+              <br>
+              "-2115676107773891739.mcworld"
+              <br><br>
+              クリックしてダウンロード
+            </p2>
+          </div>
+        </div>
+        <div class="grid division-1 gridGap sm:division-2 lg:division-3">
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/ネザーハウス.zip">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/nether_house.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/ネザーハウス.zip">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  ネザーハウス.zip
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/ハチミツ工場.zip">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/haney_factory.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/ハチミツ工場.zip">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  ハチミツ工場.zip
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/図書館.zip">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/library.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/図書館.zip">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  図書館.zip
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/森の洋館(らむちゃまの別荘).zip">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/woodland_mansion_artifact.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/森の洋館(らむちゃまの別荘).zip">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  森の洋館(らむちゃまの別荘)<br>.zip
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/ブランチマイニング場.zip">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/branch_mining_site.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/ブランチマイニング場.zip">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  ブランチマイニング場.zip
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/Space Valkyria.zip">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/space_valkyria.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/Space Valkyria.zip">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  Space Valkyria.zip
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/陸上監獄インペルアップ_エントランス.mcstructure">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/impulse_up-entrance.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/陸上監獄インペルアップ_エントランス.mcstructure">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  陸上監獄インペルアップ_エントランス.mcstructure
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">ダウンロード不可</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/陸上監獄インペルアップ.zip">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/impulse_up.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/陸上監獄インペルアップ.zip">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  陸上監獄インペルアップ.zip
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/豪華なモダンハウス ロード時 Y -4.mcstructure">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/modern_house.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/豪華なモダンハウス ロード時 Y -4.mcstructure">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  豪華なモダンハウス<br>.mcstructure
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/モダンマンション.mcstructure">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/modern_mansion.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/モダンマンション.mcstructure">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  モダンマンション<br>.mcstructure
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/水上拠点.mcstructure">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/water_base.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/水上拠点.mcstructure">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  水上拠点.mcstructure
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/銅製ハウス.mcstructure">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/copper_house.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/銅製ハウス.mcstructure">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  銅製ハウス.mcstructure
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="../../dl/空中拠点.mcstructure">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../../img/sky_base.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="../../dl/空中拠点.mcstructure">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  空中拠点.mcstructure
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <div class="paragraph">クリックしてダウンロード</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <a href="#">
         <img style="margin-top: 4px;" src="../../img/minecraft.svg" width="200" alt="minecraft">
@@ -175,3 +233,10 @@
     </footer>
   </body>
 </html>
+
+<style>
+  body,html {
+    height: 100%;
+    background-color: rgb(31 41 55);
+  }
+</style>

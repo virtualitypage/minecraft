@@ -41,7 +41,7 @@ body {
   font-family: system-ui, sans-serif;
   overflow-x: hidden;
   margin: 0;
-  background: rgb(204, 0, 255);
+  background-color: rgb(200 110 255);
   color: #fff;
 }
 

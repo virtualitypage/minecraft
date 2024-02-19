@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Minecraft</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header>
@@ -19,79 +20,96 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <article style="background-color: rgb(87, 87, 87);">
-        <h1 style="text-align: center;">MINECRAFT REALMS</h1>
-        <p>
-          Realmsとは、異なる端末を使用している友達でも、簡単に、そして安全に同じ世界で<br>
-          プレイできるサブスクリプションサービスです。<br>
-          5種類のコンテンツとインフォメーションには<br>
-          ワールドやその他に関する情報が載っており、<br>
-          誰もが自由に閲覧することができます。<br>
-          ただし、Realmsサーバーについては認証が必要になります。
-        </p>
-      </article>
-      <article>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom">
-              <a class="btn-play-info" onclick="information()">インフォメーション</a>
-            </td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom">
-              <a class="btn-play" onclick="realms()">Realmsサーバー</a>
-            </td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom">
-              <a href="./content/open_world" class="btn-play">オープンワールド</a>
-            </td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom">
-              <a href="./content/nether" class="btn-play">ネザーアップデート</a>
-            </td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom">
-              <a href="./content/end" class="btn-play">エンドクエリ</a>
-            </td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="./img/minecraft-realms.jpg" width="100%" alt="minecraft-realms">
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom">
-              <a href="./content/chest" class="btn-play">チェスト</a>
-            </td>
-          </tr>
-        </table>
-      </article>
-      <br>
-    </main>
+    <section class="middleMargin-bgColor middleMargin-textColor">
+      <div class="container innerMargin sm:contentBetween contentBetween sm:gridContainer-12col">
+        <div class="sm:imgWidth-100 group hover:no-underline focus:no-underline lg:grid lg:gridContainer-12col outerMargin-bgColor">
+          <a onclick="realms()" class="replaceElement lg:gridItem-7col img-bgColor">
+            <img src="./img/minecraft-realms.jpg" alt="" class="img_Realms replaceElement imgWidth-100 imgHeight-16rem sm:imgHeight-24rem lg:gridItem-7col img-bgColor">
+          </a>
+          <div class="innerMargin releaseDate-while lg:gridItem-5col">
+            <a onclick="realms()">
+              <h3 class="titleSize titleSemibold sm:titleSize group-hover:underline group-focus:underline">
+                MINECRAFT REALMS
+              </h3>
+            </a>
+            <span class="releaseDate releaseDate-textColor"></span>
+            <p2>
+              <br>
+              Realmsとは、異なる端末を使用している友達でも簡単・安全に同じ世界でプレイできるサブスクリプションサービスです。<br><br>
+              5種類のコンテンツとインフォメーション(マーキー)にはワールドやその他に関する情報が載っており、誰もが自由に閲覧することができます。<br><br>
+              ただし、Realmsサーバーについては認証が必要になります。
+            </p2>
+          </div>
+        </div>
+        <marquee id="information"></marquee>
+        <div class="grid division-1 gridGap sm:division-2">
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="./content/open_world">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="./img/openWorld.jpg">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="./content/open_world">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  オープンワールド
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <p2>
+                  show information about open world. from initial spawn to remote locations.
+                </p2>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="./content/nether">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="./img/netherWorld.jpg">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="./content/nether">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  ネザーアップデート
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <p2>
+                  display information about the world beyond the Nether Gate.<br>you'll be surprised at what you're about to see!!!
+                </p2>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="./content/end">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="./img/endWorld.jpg">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="./content/end">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  エンドクエリ
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <p2>
+                  at the end there is an amazingly crazy man-made structure. and then there are neurons.
+                </p2>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="./content/chest">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="./img/chest.jpg">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="./content/chest">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  チェスト
+                </h3>
+                <span class="releaseDate releaseDate-textColor"></span>
+                <p2>
+                  we have everything from world data backups to ID lists and OSTs.
+                </p2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <a href="#">
         <img style="margin-top: 4px;" src="./img/minecraft.svg" width="200" alt="minecraft">
@@ -99,3 +117,26 @@
     </footer>
   </body>
 </html>
+
+<style>
+  body,html {
+    height: 100%;
+    background-color: rgb(31 41 55);
+  }
+</style>
+
+<!-- image references -->
+<!-- openWorld.jpg : https://www.minecraft.net/ja-jp -->
+<!-- netherWorld.jpg : https://x.com/dungeonsgame/status/1387058966497214474?s=20 -->
+<!-- endWorld.jpg : https://minecraft.fandom.com/wiki/Minecraft_Dungeons:End_Wilds?file=End_Wilds.png -->
+<!-- chest.jpg : https://thenerdstash.com/how-to-take-everything-from-a-chest-in-minecraft/ -->
+
+<script>
+  function information(){
+    var marquee = document.getElementById("information");
+    let today = new Date();
+    let date = today.toLocaleDateString();
+    marquee.textContent = date + " 現在、最新情報はありません";
+  }
+  information();
+</script>
