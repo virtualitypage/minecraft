@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <title>ネザー</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
     <header>
       <script src="../js/admin.js"></script>
-      <a href="../index">
-        <img style="margin-top: 4px;" src="../img/minecraft.svg" width="200" alt="minecraft">
-      </a>
-      <nav class="nav">
+      <img src="../img/minecraft.svg" width="200" alt="minecraft" id="result" onclick="butClick()">
+        <nav class="nav">
         <ul class="menu-group">
           <li class="menu-item"><a onclick="realms2()">Realms</a></li>
           <li class="menu-item"><a href="../content/open_world">オープンワールド</a></li>
@@ -20,63 +19,87 @@
         </ul>
       </nav>
     </header>
-    <br>
-    <p style="text-align:center; font-size: 20px;"><b>【ロケーション】</b></p>
-    <main>
-      <article>
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>現在適用中のティック領域<br>(継続的に更新され続ける特定のチャンク)</b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a onclick="tickingArea2()" class="btn-play">詳細を確認する</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../img/netherfortress.png" width="100%" alt="netherfortress">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>ネザー要塞<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a onclick="netherFortress()" class="btn-play">座標を表示</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../img/bastionremnant.png" width="100%" alt="bastionremnant">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>ピグリン要塞<br>
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a onclick="bastionRemnant()" class="btn-play">座標を表示</a></td>
-          </tr>
-        </table>
-      </article>
-      <br>
-      <br>
-      <p style="text-align:center; font-size: 20px;"><b>【ロケーション(人工物)】</b></p>
-      <article>
-        <img src="../img/end_gate-way.png" width="100%" alt="minecraft-realms">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>エンドゲートウェイ(ネザー to エンド トンネリング)<br>
-          座標：-5, 63, -29
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="./nether/end_gate-way" class="btn-play">詳細</a></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <img src="../img/branch_mining_site.png" width="100%" alt="minecraft-realms">
-        <p style="text-align:center; font-size: 18px; margin-top: 5px;"><b>ブランチマイニング場<br>
-          座標：5, 63, -25
-        </b></p>
-        <table class="content-bottom">
-          <tr>
-            <td class="content-bottom"><a href="./nether/branch_mining_site" class="btn-play">詳細</a></td>
-          </tr>
-        </table>
-      </article>
-    </main>
+    <section class="middleMargin-bgColor middleMargin-textColor">
+      <div class="container innerMargin sm:contentBetween contentBetween sm:gridContainer-12col">
+        <div class="sm:imgWidth-100 group hover:no-underline focus:no-underline lg:grid lg:gridContainer-12col outerMargin-bgColor">
+          <a onclick="tickingArea2()" class="replaceElement lg:gridItem-7col img-bgColor">
+            <img src="../img/netherWorld.jpg" alt="" class="img_Realms replaceElement imgWidth-100 imgHeight-16rem sm:imgHeight-24rem lg:gridItem-7col img-bgColor">
+          </a>
+          <div class="innerMargin releaseDate-while lg:gridItem-5col">
+            <a onclick="tickingArea2()">
+              <h3 class="titleSize titleSemibold sm:titleSize group-hover:underline group-focus:underline">
+                ネザー<br>LOCATIONS
+              </h3>
+            </a>
+            <span class="releaseDate releaseDate-textColor"></span>
+            <p2>
+              <br>
+              現在適用中のティック領域<br>(継続的に更新され続ける特定のチャンク)
+              <br><br>
+              クリックして座標を表示
+            </p2>
+          </div>
+        </div>
+        <div class="grid division-1 gridGap sm:division-2">
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a onclick="netherFortress()">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../img/netherfortress.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a onclick="netherFortress()">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  ネザー要塞
+                </h3>
+                <span class="releaseDate releaseDate-textColor">座標：</span>
+                <div class="paragraph">クリックして座標を表示</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a onclick="bastionRemnant()">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../img/bastionremnant.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a onclick="bastionRemnant()">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  ピグリン要塞
+                </h3>
+                <span class="releaseDate releaseDate-textColor">座標：</span>
+                <div class="paragraph">クリックして座標を表示</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="./nether/end_gate-way">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../img/end_gate-way.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="./nether/end_gate-way">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  エンドゲートウェイ<br>(ネザー to エンド トンネリング)
+                </h3>
+                <span class="releaseDate releaseDate-textColor">座標：-5, 63, -29</span>
+                <div class="paragraph">クリックして詳細を表示</div>
+              </a>
+            </div>
+          </div>
+          <div class="group hover:no-underline focus:no-underline outerMargin-bgColor">
+            <a href="./nether/branch_mining_site">
+              <img class="img replaceElement imgHeight-15rem imgWidth-100 img-bgColor" src="../img/branch_mining_site.png">
+            </a>
+            <div class="innerMargin releaseDate-while">
+              <a href="./nether/branch_mining_site">
+                <h3 class="titleSize titleSemibold group-hover:underline group-focus:underline">
+                  ブランチマイニング場
+                </h3>
+                <span class="releaseDate releaseDate-textColor">座標：5, 63, -25</span>
+                <div class="paragraph">クリックして詳細を表示</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <a href="#">
         <img style="margin-top: 4px;" src="../img/minecraft.svg" width="200" alt="minecraft">
@@ -84,3 +107,10 @@
     </footer>
   </body>
 </html>
+
+<style>
+  body,html {
+    height: 100%;
+    background-color: rgb(31 41 55);
+  }
+</style>
